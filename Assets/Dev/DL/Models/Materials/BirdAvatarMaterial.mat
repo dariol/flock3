@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: BirdAvatarMaterial
+  m_Shader: {fileID: 4800000, guid: 3df62f60d93a54f52b3e57e074968781, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _EMISSION
+  m_LightmapFlags: 1
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 6b963e45c55f34b38bfcfcbda1e601cc, type: 3}
+        m_Scale: {x: 12, y: 12}
+        m_Offset: {x: -1.7663234, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Occlusion:
+        m_Texture: {fileID: 2800000, guid: 8da6e8cd4d0fb4c3fa3a585684ccd02d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _InHueShift: 5.8
+    - _InSpeed: 12
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _OutHueShift: 0.06
+    - _OutSpeed: 1
+    - _Parallax: 0.02
+    - _Saturation: 1
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _ColorAdd: {r: 0, g: 0.54817426, b: 0.6911765, a: 1}
+    - _ColorB: {r: 0.9485294, g: 0.8644508, b: 0.68349916, a: 0}
+    - _ColorB2: {r: 0.54573965, g: 0.69605803, b: 0.75735295, a: 0}
+    - _ColorG: {r: 0.8088235, g: 0.9604462, b: 1, a: 0}
+    - _ColorG2: {r: 0.625, g: 0.46875, b: 0.59482753, a: 0}
+    - _ColorMult: {r: 0.29974052, g: 0.5464563, b: 0.64705884, a: 0}
+    - _ColorR: {r: 0.9632353, g: 0.9632353, b: 0.9632353, a: 0}
+    - _ColorR2: {r: 0.7647059, g: 0.6972318, b: 0.6972318, a: 0}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _InHueShift: {r: 1.3, g: 1, b: 0.7, a: 0}
+    - _InSpeed: {r: 1.5, g: 1, b: 0.5, a: -1}
+  m_BuildTextureStacks: []

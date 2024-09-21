@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: InsectMaterial
+  m_Shader: {fileID: 4800000, guid: 5fdfd934d9bb84213bc9ef9f763dcb79, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3000
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Tex1:
+        m_Texture: {fileID: 2800000, guid: 1affe94c8b9644a12b204c800b9ec781, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Tex2:
+        m_Texture: {fileID: 2800000, guid: 73b59983864c742adaa5e1b699df10ea, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Tex3:
+        m_Texture: {fileID: 2800000, guid: 396a90a3cd85d4467b0612767ff60a22, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Tex4:
+        m_Texture: {fileID: 2800000, guid: 1c2c48c7412334b0cac97ad9cebd66cc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Tex5:
+        m_Texture: {fileID: 2800000, guid: 130630135cc8b45dc8583a41383d23a9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Tex6:
+        m_Texture: {fileID: 2800000, guid: 306ea31a38df8402883b7614b3ffef23, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Tex7:
+        m_Texture: {fileID: 2800000, guid: 35f0c9f67f3fa41a9b1789373d31934f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Tex8:
+        m_Texture: {fileID: 2800000, guid: d11f757933c684b99b2b89a177494dab, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _TextureFade: 20
+    m_Colors:
+    - _ColorAdd: {r: 0, g: 0, b: 0, a: 0}
+    - _ColorB: {r: 0, g: 0, b: 0, a: 0}
+    - _ColorB2: {r: 0, g: 0, b: 0, a: 0}
+    - _ColorG: {r: 0, g: 0, b: 0, a: 0}
+    - _ColorG2: {r: 0, g: 0, b: 0, a: 0}
+    - _ColorMult: {r: 0.2509804, g: 0.9490197, b: 0.7960785, a: 0.56078434}
+    - _ColorOffset: {r: 4, g: 0, b: 0, a: 0}
+    - _ColorR: {r: 0, g: 0, b: 0, a: 0}
+    - _ColorR2: {r: 0, g: 0, b: 0, a: 0}
+    - _InHueShift: {r: 0, g: 0, b: 0, a: 0}
+    - _InSpeed: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
