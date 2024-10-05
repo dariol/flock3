@@ -143,36 +143,38 @@ public class ServerHUDMirror : MonoBehaviour
         StartCoroutine(GetPublicIP()); // Start the actual checking.
         checking.SetActive(true);
     }
+    
 
     IEnumerator GetPublicIP()
     {
-        UnityWebRequest request = UnityWebRequest.Get("http://checkip.dyndns.org");
-        yield return request.SendWebRequest();
+        // UnityWebRequest request = UnityWebRequest.Get("http://checkip.dyndns.org");
+        // yield return request.SendWebRequest();
 
-        if (request.result != UnityWebRequest.Result.ConnectionError && request.result != UnityWebRequest.Result.ProtocolError)
-        {
-            // Filter the response message for the IP address.
-            string response = request.downloadHandler.text;
-            string[] a = response.Split(':');
-            string a2 = a[1].Substring(1);
-            string[] a3 = a2.Split('<');
-            string a4 = a3[0];
-            externalip = a4; // TADAA..!! Your external IP address :)
+        // if (request.result != UnityWebRequest.Result.ConnectionError && request.result != UnityWebRequest.Result.ProtocolError)
+        // {
+        //     // Filter the response message for the IP address.
+        //     string response = request.downloadHandler.text;
+        //     string[] a = response.Split(':');
+        //     string a2 = a[1].Substring(1);
+        //     string[] a3 = a2.Split('<');
+        //     string a4 = a3[0];
+        //     externalip = a4; // TADAA..!! Your external IP address :)
 
             // Getting the IP from the PC the server is running on (a local LAN address)
             localIP = GetLocalIPAddress();
+            yield return null;
 
-            getIP.GetComponentInChildren<Text>().text = "Server IP Address\nExternal :" + externalip + "\nLocal :" + localIP;
-            // Saving the IP addresses.
-            PlayerPrefs.SetString("IPAddressS", externalip);
-            PlayerPrefs.SetString("LocalIP", localIP);
-            checking.SetActive(false);
-        }
-        else
-        {
-            getIP.GetComponentInChildren<Text>().text = "Something went wrong\nPlease try again";
-            checking.SetActive(false);
-        }
+        //     getIP.GetComponentInChildren<Text>().text = "Server IP Address\nExternal :" + externalip + "\nLocal :" + localIP;
+        //     // Saving the IP addresses.
+        //     PlayerPrefs.SetString("IPAddressS", externalip);
+        //     PlayerPrefs.SetString("LocalIP", localIP);
+        //     checking.SetActive(false);
+        // }
+        // else
+        // {
+        //     getIP.GetComponentInChildren<Text>().text = "Something went wrong\nPlease try again";
+        //     checking.SetActive(false);
+        // }
     }
 
     private void SetPort()
