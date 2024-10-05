@@ -15,7 +15,11 @@ namespace Mirror.Examples.Pong
             rigidbody2d.simulated = true;
 
             // Serve the ball from left player
+#if UNITY_6000_0_OR_NEWER
+            rigidbody2d.linearVelocity = Vector2.right * speed;
+#else
             rigidbody2d.velocity = Vector2.right * speed;
+#endif
         }
 
         float HitFactor(Vector2 ballPos, Vector2 racketPos, float racketHeight)
@@ -29,7 +33,8 @@ namespace Mirror.Examples.Pong
             return (ballPos.y - racketPos.y) / racketHeight;
         }
 
-        [ServerCallback] // only call this on server
+        // only call this on server
+        [ServerCallback]
         void OnCollisionEnter2D(Collision2D col)
         {
             // Note: 'col' holds the collision information. If the
@@ -53,7 +58,11 @@ namespace Mirror.Examples.Pong
                 Vector2 dir = new Vector2(x, y).normalized;
 
                 // Set Velocity with dir * speed
+#if UNITY_6000_0_OR_NEWER
+                rigidbody2d.linearVelocity = dir * speed;
+#else
                 rigidbody2d.velocity = dir * speed;
+#endif
             }
         }
     }

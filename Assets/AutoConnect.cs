@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using Mirror;
 using UnityEngine.Networking;
-
+using System.Reflection;
 public class AutoConnect : MonoBehaviour
 {
     private NetworkManagerMirror manager;
@@ -69,7 +69,17 @@ public class AutoConnect : MonoBehaviour
         manager.networkAddress = serverIP;
 
         // Set the port for the transport component (TelepathyTransport)
-        var transport = Transport.activeTransport as TelepathyTransport;
+        // var transport = Transport.active;// as TelepathyTransport;
+        // if (transport != null)
+        // {
+        //     transport.Port = (ushort)autoConnectPort;
+        // }
+        // else
+        // {
+        //     Debug.LogError("Unsupported transport type. Please set the port manually.");
+        // }
+
+        var transport = Transport.active as TelepathyTransport;
         if (transport != null)
         {
             transport.port = (ushort)autoConnectPort;
@@ -79,9 +89,11 @@ public class AutoConnect : MonoBehaviour
             Debug.LogError("Unsupported transport type. Please set the port manually.");
         }
 
+
         StartCoroutine(Connect());
         StartCoroutine(CheckConnection());
     }
+
 
     IEnumerator Connect()
     {

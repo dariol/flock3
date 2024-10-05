@@ -194,7 +194,7 @@ public class ServerHUDMirror : MonoBehaviour
             portPlaceholderText.text = portText.text;
         }
 
-         var transport = Transport.activeTransport as TelepathyTransport;
+         var transport = Transport.active as TelepathyTransport;
         if (transport != null)
         {
             transport.port = ushort.Parse(portPlaceholderText.text);

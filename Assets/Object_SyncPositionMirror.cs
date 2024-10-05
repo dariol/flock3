@@ -33,7 +33,7 @@ public class Object_SyncPositionMirror : NetworkBehaviour
 
 	void LerpPosition()
 	{
-		if (!hasAuthority)
+		if (!isOwned)
 		{
 			camYLerp = Mathf.Lerp(camYLerp, Camera.main.transform.position.y, camLerpSpeed);
 			if (lerpToCamHeight)
@@ -53,7 +53,7 @@ public class Object_SyncPositionMirror : NetworkBehaviour
 	[ClientCallback]
 	void TransmitPosition()
 	{
-		if (hasAuthority && (Quaternion.Angle(myTransform.rotation, lastRot) > rotThreshold || Vector3.Distance(myTransform.position, lastPos) > threshold))
+		if (isOwned && (Quaternion.Angle(myTransform.rotation, lastRot) > rotThreshold || Vector3.Distance(myTransform.position, lastPos) > threshold))
 		{
 			Cmd_ProvidePositionToServer(myTransform.position, myTransform.rotation);
 			lastPos = myTransform.position;
